@@ -39,5 +39,8 @@ struct Quest
     return r.editorID == l.editorID;
   }
 
-  friend bool operator!=(const Quest& r, const Quest& l) { return !(r == l); }
+  friend bool operator!=(const Quest& r, const Quest& l)
+  {
+    return r.editorID != l.editorID;
+  }
 };
